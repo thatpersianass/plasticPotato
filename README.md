@@ -40,24 +40,12 @@ La suite de pruebas automatizadas en `test.py` es el núcleo de validación del 
 
 Para que el proyecto funcione, la base de datos debe cumplir con los siguientes requisitos:
 
-1.  **Creación de la BD**: Crear una base de datos llamada `music_store`.
-2.  **Codificación**: Asegurar que sea `UTF-8` para soportar tildes en nombres como "Pérez" o "Carmesí".
-3.  **Permisos**: El usuario (ej. `postgres`) debe tener permisos para ejecutar `CREATE TYPE` y `DROP TYPE`.
+1.  **Codificación**: Asegurar que sea `UTF-8` para soportar tildes en nombres como "Pérez" o "Carmesí".
+2.  **Permisos**: El usuario (aed_user) debe tener permisos para ejecutar `CREATE TYPE` y `DROP TYPE`.
 
 ### Parámetros de Conexión (`connection.py`)
 ```python
 host="localhost",
-database="music_store",
-user="tu_usuario",
-password="tu_password"
-📊 Comparativa de ModelosCaracterísticaRelacional ClásicoModelo Objeto-Relacional (BDOR)Relaciones Muchos a MuchosTablas intermedias/puente.Arrays de Identificadores.Atributos de FilaSolo datos atómicos.Tipos Compuestos (Objetos).Consultas ComplejasMúltiples JOINs.Acceso directo a campos del objeto.IntegridadNormalización estricta.Encapsulamiento de datos relacionados.🚀 Guía de Uso RápidoInstalaciónBashpip install psycopg2-binary pytest
-EjecuciónMenú Principal: python main.py (Incluye feedback visual con iconos ✅, ❌ y ⚠️).Ejecutar Tests: python -m pytest -v test.pyProyecto desarrollado para la práctica de Bases de Datos Objeto-Relacionales. Dataset: Connor Kauffman, Rawayana, Neomai, MicroTDH.
----
-
-### ¿Cómo guardarlo?
-1. Copia todo el contenido del bloque de arriba.
-2. Abre un editor de texto (Notepad, VS Code, etc.).
-3. Pega el contenido.
-4. Guarda el archivo como **`README.md`** en la raíz de tu proyecto.
-
-**¿Hay algún otro detalle de la configuración o del código que quieras ajustar antes de subirlo a tu repositorio?**
+database="aed_db",
+user="aed_user",
+password="aed_pass"
